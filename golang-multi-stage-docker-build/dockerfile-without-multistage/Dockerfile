@@ -2,9 +2,7 @@
 # BASE IMAGE
 ###########################################
 
-FROM ubuntu AS build
-
-RUN apt-get update && apt-get install -y golang-go
+FROM ubuntu
 
 ENV GO111MODULE=off
 
