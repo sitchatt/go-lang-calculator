@@ -4,6 +4,8 @@
 
 FROM ubuntu
 
+RUN apt-get update && apt install golang-go
+
 ENV GO111MODULE=off
 
 COPY . .
